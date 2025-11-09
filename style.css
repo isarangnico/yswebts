@@ -13,6 +13,8 @@ body {
     width: 100%;
     user-select: none;
     overflow: hidden;
+    touch-action: none;
+    height: 100%;
 }
 
 h1 {
@@ -214,6 +216,7 @@ footer p {
 .shiro img {
     height: 100vh;
 }
+
     .menu {
         gap: 56px;
         padding: 0px 38px;
@@ -252,5 +255,3 @@ footer p {
 
 
 }
-
-
