@@ -210,6 +210,11 @@ footer p {
         width: 100%;
     }
 
+    
+.shiro img {
+    width: 375px;
+}
+
     .menu {
         gap: 56px;
         padding: 0px 38px;
