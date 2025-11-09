@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Recursive:wght@300..1000&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+h1 {
+    font: 400 14px "Recursive", sans-serif;
+    letter-spacing: 4px;
+}
+
+p {
+    font: 400 12px "Noto Sans KR", sans-serif;
+}
+
+#bg {
+    background-image: url(img/main_bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+}
+
+.scroll {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
+    margin: 100px 0 694px;
+}
+
+.shiro {
+    position: absolute;
+    top: 50%;
+    left: 49.5%;
+    transform: translate(-50%, 80%) scale(0.95);
+    animation: fadeIn 1.8s ease forwards,
+        float 3s ease-in-out infinite alternate;
+    width: auto;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) scale(0.95);
+    }
+
+    100% {
+        transform: translate(-50%, -52%) scale(0.95);
+    }
+}
+
+.menu {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 1s forwards;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 92px;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.fic {
+    border: solid 1px #ff0000;
+    width: 274px;
+    height: 190px;
+    margin-left: 182px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.un {
+    border: solid 1px #ff0000;
+    width: 166px;
+    height: 218px;
+    margin: 92px 0 0 102px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+
+.fic h1 {
+    display: inline-block;
+    background-color: #ff0000;
+    padding: 2px 12px;
+    color: #fff;
+    margin: 0;
+}
+
+
+.un h1 {
+    display: inline-block;
+    background-color: #ff0000;
+    padding: 2px 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.art {
+    border: solid 1px #ff0000;
+    width: 200px;
+    height: 256px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.art h1 {
+    display: inline-block;
+    background-color: #ff0000;
+    padding: 2px 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9999;
+    padding-bottom: 44px;
+}
+
+footer p {
+    font-size: 8px;
+    color: #fff;
+    padding-top: 6px;
+}
+
+
+
+
+
+
+
+
+/* 모바일용 (최대 767px) */
+@media screen and (max-width: 767px) {
+
+    h1 {
+        font: 400 10px "Recursive", sans-serif;
+        letter-spacing: 4px;
+    }
+
+    .scroll {
+        margin: 100px 0 0 0;
+        padding: 0px 38px;
+        width: 100%;
+    }
+
+    .menu {
+        gap: 56px;
+        padding: 0px 38px;
+    }
+
+    .fic {
+        width: clamp(154px, 40vw, 274px);
+        height: clamp(110px, 20vw, 190px);
+        margin-left: 146px;
+    }
+
+    .un {
+        width: clamp(106px, 20vw, 166px);
+        height: clamp(154px, 40vw, 218px);
+        margin: 78px 0 0 46px;
+    }
+
+    .art {
+        border: solid 1px #ff0000;
+        width: clamp(146px, 40vw, 200px);
+        height: clamp(130px, 30vw, 256px);
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    footer img {
+        width: 16px;
+    }
+
+    footer p {
+        font-size: 6px;
+        color: #fff;
+        padding-top: 6px;
+    }
+
+
+}
