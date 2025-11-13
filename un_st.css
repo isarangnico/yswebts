@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Recursive:wght@300..1000&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    user-select: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font: 400 12px "Recursive", sans-serif;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 4px 14px;
+}
+
+p {
+    font: 300 12px "Noto Sans KR", sans-serif;
+    padding: 14px;
+    color: #fff;
+    line-height: 22px;
+}
+
+#bg {
+    background-image: url(img/un_bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -100;
+}
+
+.apple {
+    padding: 112px 0 88px 0;
+}
+
+
+/* gnb */
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font: 400 12px "Recursive", sans-serif;
+    letter-spacing: 4px;
+    color: #fff;
+    padding: 0px 2px 0 6px;
+}
+
+.menu ul li a:hover {
+    color: #3337EF;
+    background-color: #fff;
+}
+
+
+/* list */
+
+.scroll {
+
+    position: relative;
+    height: 100%;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 88px;
+    text-align: left;
+}
+
+
+
+.untold {
+    background-color: rgba(155, 0, 0, 0.747);
+
+}
+
+
+.untold span {
+    text-align: right;
+}
+
+
+
+footer {
+    /* position: fixed; */
+    width: 100%;
+    text-align: center;
+    padding: 88px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 8px;
+    color: #fff;
+    padding: 6px 0 0 0;
+}
+
+
+/* 모바일용 (최대 767px) */
+@media screen and (max-width: 767px) {
+    h1 {
+        font: 400 10px  "Recursive", sans-serif;
+    }
+
+    p {
+        font: 300 10px "Noto Sans KR", sans-serif;
+    }
+
+
+    .menu ul {
+        gap: clamp(2rem, 10vw, 6rem);
+    }
+
+    .menu ul li a {
+        font: 400 10px "Recursive", sans-serif;
+    }
+
+
+    .scroll {
+        width: 100%;
+        padding: 0 38px;
+    }
+
+
+    .apple {
+        padding: 136px 0 66px 0;
+
+    }
+
+    .apple img {
+        width: 40px;
+    }
+
+    .list {
+        gap: 14px;
+        padding-top: 66px;
+    }
+
+
+
+    footer {
+        padding: 66px 0 120px 0;
+    }
+
+    footer img {
+        width: 16px;
+    }
+
+    footer p {
+        font-size: 6px;
+        color: #fff;
+        padding-top: 6px;
+    }
+
+
+    .name span {
+        font-size: 8px;
+    }
+
+
+}
