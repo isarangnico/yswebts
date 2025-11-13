@@ -223,21 +223,21 @@ footer p {
     }
 
     .fic {
-        width: clamp(154px, 40vw, 274px);
-        height: clamp(110px, 20vw, 190px);
+        width: 154px;
+        height: 110px;
         margin-left: 146px;
     }
 
     .un {
-        width: clamp(106px, 20vw, 166px);
-        height: clamp(154px, 40vw, 218px);
+        width: 106px;
+        height: 154px;
         margin: 78px 0 0 46px;
     }
 
     .art {
         border: solid 1px #ff0000;
-        width: clamp(146px, 40vw, 200px);
-        height: clamp(130px, 30vw, 256px);
+        width: 146px;
+        height: 130px;
         display: flex;
         justify-content: left;
         align-items: flex-start;
@@ -259,3 +259,4 @@ footer p {
 
 
 }
+
