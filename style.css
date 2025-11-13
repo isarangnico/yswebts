@@ -207,15 +207,15 @@ footer p {
     }
 
     .scroll {
-        margin: 0px 0 0 0;
+        margin: 90px 0 0 0;
         padding: 0px 38px;
         width: 100%;
     }
 
-    
-.shiro img {
-    height: 100vh;
-}
+
+    .shiro img {
+        height: 80vh;
+    }
 
     .menu {
         gap: 56px;
@@ -253,12 +253,9 @@ footer p {
         padding-top: 6px;
     }
 
-       footer {
+    footer {
         padding: 22px 0;
     }
 
 
-
 }
-
-
