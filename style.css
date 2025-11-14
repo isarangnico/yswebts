@@ -230,13 +230,20 @@ footer p {
 
 
     .castle-container {
-        height: 100vh;
+       height: 100dvh;
+    }
+
+    .shiro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80dvh;
     }
 
     .shiro img {
-         height: 80vh;
-        width: auto;
-        max-width: none;
+        max-width: 90vw;
+      
+        height: auto;
     }
 
     .menu {
