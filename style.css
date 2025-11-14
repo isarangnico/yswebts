@@ -45,8 +45,10 @@ p {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center; /* 가로 중앙 */
-    align-items: center; /* 세로 중앙 */
+    justify-content: center;
+    /* 가로 중앙 */
+    align-items: center;
+    /* 세로 중앙 */
 }
 
 .scroll {
@@ -56,11 +58,11 @@ p {
     scroll-behavior: smooth;
     position: relative;
     height: 100%;
-    margin: 100px 0 694px;
+    /* margin: 100px 0 694px; */
 }
 
 .shiro {
-    position: relative; 
+    position: relative;
     transform: translateY(0);
     animation: fadeIn 1.8s ease forwards, float 3s ease-in-out infinite alternate;
     z-index: 1;
@@ -68,7 +70,7 @@ p {
 
 
 .shiro img {
-    max-width: 80vw; 
+    max-width: 80vw;
     height: auto;
 }
 
@@ -77,6 +79,7 @@ p {
     0% {
         transform: translateY(0) scale(0.95);
     }
+
     100% {
         transform: translateY(-10px) scale(0.95);
     }
@@ -105,6 +108,7 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 92px;
+    margin-top: 100px;
 }
 
 
@@ -214,7 +218,7 @@ footer p {
 @media screen and (max-width: 767px) {
 
     h1 {
-        font: 300 10px "Recursive", sans-serif;
+        font: 400 10px "Recursive", sans-serif;
         letter-spacing: 4px;
     }
 
@@ -225,28 +229,24 @@ footer p {
     }
 
 
- .castle-container {
-    height: 100vh;
-}
+    .castle-container {
+        height: 100vh;
+    }
 
-.shiro img {
-    max-width: 90vw;
-    height: auto;
-}
+    .shiro img {
+        max-width: 90vw;
+        height: auto;
+    }
 
-  
     .menu {
         gap: 7vh; 
+        margin-top: 60px;
     }
 
     .wrap {
         gap: 4vw;
     }
 
-    .fic, .art, .un {
-        width: 36vw;
-        height: auto; 
-    }
 
     .fic {
         width: 154px;
@@ -285,4 +285,3 @@ footer p {
 
 
 }
-
