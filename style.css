@@ -46,9 +46,9 @@ p {
     height: 100%;
     display: flex;
     justify-content: center;
-    /* 가로 중앙 */
+    
     align-items: center;
-    /* 세로 중앙 */
+   
 }
 
 .scroll {
@@ -234,8 +234,9 @@ footer p {
     }
 
     .shiro img {
-        max-width: 90vw;
-        height: auto;
+         height: 80vh;
+        width: auto;
+        max-width: none;
     }
 
     .menu {
