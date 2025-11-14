@@ -178,7 +178,7 @@ footer p {
 
     .scroll {
         width: 100%;
-        padding: 0 38px;
+        padding: 0 0px;
     }
 
 
@@ -235,6 +235,7 @@ footer p {
     .name span {
         font-size: 8px;
     }
+
 
 
 }
