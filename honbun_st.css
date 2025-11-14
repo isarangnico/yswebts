@@ -29,7 +29,7 @@ h2 {
 p {
     font: 400 14px "Noto Sans KR", sans-serif;
     color: #262626;
-    line-height: 20px;
+    line-height: 24px;
 }
 
 #bg {
@@ -58,9 +58,13 @@ p {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 8rem;
+    /* gap: 8rem; */
     justify-content: center;
     text-align: center;
+}
+
+.menu ul>li {
+    margin: 0 4rem;
 }
 
 .menu ul li a {
@@ -167,8 +171,12 @@ footer p {
     }
 
 
-    .menu ul {
+    /* .menu ul {
         gap: clamp(2rem, 10vw, 6rem);
+    } */
+
+    .menu ul>li {
+        margin: 0 clamp(1rem, 5vw, 3rem);
     }
 
     .menu ul li a {
@@ -196,12 +204,9 @@ footer p {
     /* 글*/
     .container {
         width: clamp(338px, 80vw, 710px);
-        background-color: #fff;
         margin-top: 66px;
         padding: 0 36px;
     }
-
-
 
     .title {
         width: 100%;
@@ -235,7 +240,6 @@ footer p {
     .name span {
         font-size: 8px;
     }
-
 
 
 }
