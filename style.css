@@ -46,9 +46,9 @@ p {
     height: 100%;
     display: flex;
     justify-content: center;
-    
+
     align-items: center;
-   
+
 }
 
 .scroll {
@@ -230,24 +230,20 @@ footer p {
 
 
     .castle-container {
-       height: 100dvh;
-    }
-
-    .shiro {
+        height: 100dvh;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80dvh;
     }
 
     .shiro img {
-        max-width: 90vw;
-      
+        width: auto;
         height: auto;
+        max-height: 90dvh;
     }
 
     .menu {
-        gap: 7vh; 
+        gap: 7vh;
         margin-top: 60px;
     }
 
